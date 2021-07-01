@@ -7,11 +7,9 @@ import './style/card.scss'
 
 export function Cards({ info }) {
     const thisCardLiked = localStorage.getItem(info.id) == null ? false : localStorage.getItem(info.id) === 'false' ? false : true 
-    
-
 
     useEffect(() => {
-        const scroll = sr({ duration: 900, origin: 'top', distance:'50px', reset: true })
+        const scroll = sr({ duration: 1500, origin: 'top', distance:'50px', reset: true })
         scroll.reveal('.notices', { delay: 200 })
         scroll.reveal('#date', { delay: 400 })
         scroll.reveal('#buttons', { delay: 450 })
