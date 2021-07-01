@@ -30,3 +30,13 @@ code {
     border-radius: 3px;
     background-color: #313131;
 }
+
+/*Global responsive*/
+@media screen and (max-width: 375px) {
+    span, p {
+        font-size: calc(1em - 1vw);
+    }
+    .header-box {
+        padding: 0 17px;
+    }   
+}
