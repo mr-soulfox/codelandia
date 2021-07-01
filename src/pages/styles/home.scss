@@ -1,0 +1,32 @@
+.header-box {
+    height: 250px;
+    background-image: linear-gradient(to right, #574ae8, #3ea1db);
+    padding: 0 60px;
+
+    .header-top-spans {
+        width: 100%;
+        padding-top: 45px;
+        display: flex;
+        justify-content: space-between;
+        
+        a, span {
+            color: #fff;
+            font-family: 'Lexend Deca';
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+    }
+
+    .header-search-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.main-box {
+    padding: 30px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

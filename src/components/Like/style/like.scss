@@ -1,0 +1,28 @@
+.button-element {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    
+    span {
+        color: #313131;
+        font-weight: 600;
+        font-size: 17px;
+        font-family: 'Lexend Deca';
+    }
+
+    svg > path {
+        transition-property: stroke;
+        transition-duration: 0.3s;
+    }
+
+    &:focus {
+        outline: transparent;
+    }
+}
+
+.liked > svg > path {
+    stroke: #574ae8;
+}
