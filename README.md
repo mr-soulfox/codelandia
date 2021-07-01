@@ -25,13 +25,14 @@
   - [React](https://reactjs.org/)
 
 #### Back-end
-<small>Não possui back-end, uso o [Supabase](https://supabase.io) para mantes o banco de dados e faço as operações no front-end</small>
+<small>Não possui back-end, estou usando o [Supabase](https://supabase.io) para mantes o banco de dados e faço as operações pelo front-end</small>
 <br/>
 
 <h3>⚙️ Recursos</h3>
 
  - [x] Sistema de busca
- - [x] Sistema de likes
+ - [x] Likes
+ - [x] Bookmark
  - [x] Pagina para adicionar mais noticias
 <br/>
 

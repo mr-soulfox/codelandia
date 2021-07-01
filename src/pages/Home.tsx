@@ -8,13 +8,14 @@ import { Link } from 'react-router-dom'
 import { SearchContext } from '../providers/search'
 import { useDebounce } from '../hook/useDebounce'
 import notFound from '../assets/notFound.svg'
+import { Helmet } from 'react-helmet'
 import './styles/home.scss'
 
 export function Home() {
     const [dataFromDb, setDataFromDb] = useState<any>([])  
     const { searchValue } = useContext(SearchContext)
     const debouncedSearch = useDebounce(searchNotices, 300)
-    
+
     async function getAllDatas() {
         const [data, error] = await get()
 
@@ -63,7 +64,10 @@ export function Home() {
 
     return (
         <div>
-            <Toaster/>  
+            <Toaster/> 
+            <Helmet>
+                <title>Codelândia | blog</title>
+            </Helmet>
             <header>
                 <div className="header-box">
                     <div className="header-top-spans">
