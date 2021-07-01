@@ -2,7 +2,7 @@ import classNames from 'classnames'
 import { useState } from 'react'
 import { update } from '../../services/database/update'
 import { getLikes } from '../../services/database/getLikes'
-import toast ,{ Toaster } from 'react-hot-toast'
+import toast from 'react-hot-toast'
 import { useEffect } from 'react'
 import './style/like.scss'
 
@@ -59,7 +59,6 @@ export function Like({id, liked}) {
 
     return (
         <>
-            <Toaster/>
             <button title="Gostei" className={classNames('button-element', { liked: like })} onClick={likeNotice} disabled={disabled}>
                 <span>{likeValue === 0 ? '' : likeValue}</span>
                 <svg className="w-6 h-6" fill="currentColor" width="24px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

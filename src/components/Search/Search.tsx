@@ -1,26 +1,22 @@
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import searchIcon from '../../assets/search.svg'
-import { get } from '../../services/database/get'
-import { useDebounce } from '../../hook/useDebounce'
+import { SearchContext } from '../../providers/search'
 import './style/search.scss'
 
 export function Search() {
     const [search, setSearch] = useState('')
-    const debouncedSearch = useDebounce(searchNotices, 500)
-
-    async function searchNotices() {
-        if (search.trim() !== '') {
-            const [data, error] = await get(search)
-
-            console.log(data, error)
-        }
-    }
+    const { searchValue, setSearchValue } = useContext(SearchContext)
 
     useEffect(() => {
-        debouncedSearch()
+        setSearchValue(search)
     
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [search])
+
+    useEffect(() => {
+        console.log(searchValue)
+        
+    }, [searchValue])
 
     return (
         <div className="header-search">
