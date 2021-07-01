@@ -18,7 +18,7 @@ export default function App() {
           <Create />
         </Route>
 
-        <Route path="/*">
+        <Route exact path="/notFound">
           <NotFound />
         </Route>
       </Switch>
