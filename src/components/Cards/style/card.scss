@@ -15,6 +15,11 @@
             color: #b6b6b6;
             font-family: 'Lexend Deca';
         }
+
+        & > div {
+            display: flex;
+            gap: 5px;
+        }
     }
 
     .notices-main {

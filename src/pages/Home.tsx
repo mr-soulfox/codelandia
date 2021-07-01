@@ -37,7 +37,7 @@ export function Home() {
             <header>
                 <div className="header-box">
                     <div className="header-top-spans">
-                        <span>
+                        <span title="Discord">
                             <a href="https://discord.gg/AKj5RnnCjP" target="_blank" rel="noreferrer">Codelândia</a>
                         </span>
                         <span>

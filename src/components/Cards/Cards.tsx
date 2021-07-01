@@ -1,4 +1,5 @@
 import { Like } from '../Like/Like'
+import { Save } from '../Save/Save'
 import { formatDate } from '../../services/scripts/formatDate'
 import './style/card.scss'
 
@@ -9,7 +10,11 @@ export function Cards({ info }) {
         <div className="notices">
             <div className="notices-header">
                 <span>{formatDate(info.Date)}</span>
-                <Like id={info.id} liked={thisCardLiked}/>
+
+                <div>
+                    <Like id={info.id} liked={thisCardLiked}/>
+                    <Save id={info.id}/>
+                </div>
             </div>
 
             <div className="notices-main">
