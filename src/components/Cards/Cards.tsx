@@ -27,7 +27,7 @@ export function Cards({ info }) {
 
                 <div id="buttons">
                     <Like id={info.id} liked={thisCardLiked}/>
-                    <Save id={info.id}/>
+                    <Save />
                 </div>
             </div>
 

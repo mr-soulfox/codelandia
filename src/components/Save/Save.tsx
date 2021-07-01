@@ -2,12 +2,12 @@ import classNames from 'classnames'
 import { useState } from 'react'
 import './style/save.scss'
 
-export function Save({id}) {
-    const [save, setSave] = useState(false)
-
-    function saveNotice() {
-        
+export function Save() {
+    const [save, setSave] = useState(false) 
+    
+    function saveNotice() {     
         setSave(!save)
+
     }
 
     return (

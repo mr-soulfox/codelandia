@@ -32,7 +32,6 @@
 
  - [x] Sistema de busca
  - [x] Likes
- - [x] Bookmark
  - [x] Pagina para adicionar mais noticias
 <br/>
 
