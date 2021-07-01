@@ -70,10 +70,14 @@ export function Home() {
                         <span title="Discord">
                             <a href="https://discord.gg/AKj5RnnCjP" target="_blank" rel="noreferrer">Codelândia</a>
                         </span>
+                        
+                        <div>
+                            <span>
+                                <Link to="/">Blog</Link>
+                            </span>
 
-                        <span>
-                            <Link to="/">Blog</Link>
-                        </span>
+                            <Link to="/create">Criar noticia</Link>
+                        </div>
                     </div>
 
                     <div className="header-search-box">

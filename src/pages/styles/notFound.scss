@@ -1,0 +1,23 @@
+.not-found-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        color: #313131;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #b6b6b6;
+    }
+}

@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Home } from './pages/Home'
+import { Create } from './pages/Create'
+import { NotFound } from './pages/NotFound'
 import { SearchProvider } from './providers/search'
 
 export default function App() {
@@ -10,6 +12,14 @@ export default function App() {
           <SearchProvider>
             <Home />  
           </SearchProvider>
+        </Route>
+
+        <Route exact path="/create">
+          <Create />
+        </Route>
+
+        <Route path="/*">
+          <NotFound />
         </Route>
       </Switch>
     </Router>
