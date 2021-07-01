@@ -1,6 +1,6 @@
 import { Search } from '../components/Search/Search'
 import { Cards } from '../components/Cards/Cards'
-import { get } from '../services/get'
+import { get } from '../services/database/get'
 import { useEffect } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 import { useState } from 'react'
