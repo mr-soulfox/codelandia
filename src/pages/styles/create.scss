@@ -1,0 +1,87 @@
+.form-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to right, #574ae8, #3ea1db);
+
+    & > h1 {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 15px;
+    }
+
+    .form-box {
+        min-width: 300px;
+        width: 50%;
+        border-radius: 5px;
+        background-color: #f3f5f7;
+        margin-top: 30px;
+        padding: 16px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            & > label {
+                font-weight: 500;
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                color: #313131;
+                margin-bottom: 3px;
+            }
+
+            & > input, textarea {
+                margin-bottom: 25px;
+                width: 97%;
+                min-width: 250px;
+                min-height: 30px;
+                padding: 3px;
+                border: 1.5px solid #313131;
+                border-radius: 3px;
+                background-color: #f3f5f7;
+                font-size: 16px;
+
+                &:focus {
+                    outline: transparent;
+                }
+            }
+
+            & > input[type=date] {
+                font-family: "Lexend deca";
+            }
+            
+            & > textarea {
+                resize: vertical;
+                max-height: 150px;
+                font-size: 14px;
+            }
+
+            & > div {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+
+                & > button {
+                    background-color: darken($color: #3ea1db, $amount: 6);
+                    padding: 3px 10px;
+                    font-size: 1.1rem;
+                    border: none;
+                    border-radius: 3px;
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: lighten($color: #b6b6b6, $amount: 5);
+        font-weight: 500;
+        margin-top: 11px;
+    }
+}

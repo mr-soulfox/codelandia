@@ -32,11 +32,29 @@ code {
 }
 
 /*Global responsive*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 423px) {
     span, p {
         font-size: calc(1em - 1vw);
     }
+
     .header-box {
         padding: 0 17px;
+
+        .header-top-spans {
+
+            span > a {
+                font-size: 19px;
+            }
+
+            div {
+                & > span > a {
+                    font-size: 15px;
+                }
+
+                #create {
+                    font-size: 12px;
+                }
+            }
+        }
     }   
 }

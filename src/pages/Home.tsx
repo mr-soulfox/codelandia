@@ -76,7 +76,7 @@ export function Home() {
                                 <Link to="/">Blog</Link>
                             </span>
 
-                            <Link to="/create">Criar noticia</Link>
+                            <Link to="/create" id="create">Criar noticia</Link>
                         </div>
                     </div>
 

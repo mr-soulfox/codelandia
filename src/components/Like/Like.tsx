@@ -15,12 +15,13 @@ export function Like({id, liked}) {
 
         setDisabled(true)
 
-        toast.loading('Espere', {
-            duration: 1500,
+        const loadToastId = toast.loading('Espere', {
             position: 'top-center'
         })
 
         const error = await update(id, !like)
+
+        toast.dismiss(loadToastId)
 
         if (error == null) {
             setLike(!like)
