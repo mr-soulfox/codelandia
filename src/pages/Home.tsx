@@ -7,12 +7,13 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { SearchContext } from '../providers/search'
 import { useDebounce } from '../hook/useDebounce'
+import notFound from '../assets/notFound.svg'
 import './styles/home.scss'
 
 export function Home() {
     const [dataFromDb, setDataFromDb] = useState<any>([])  
     const { searchValue } = useContext(SearchContext)
-    const debouncedSearch = useDebounce(searchNotices, 500)
+    const debouncedSearch = useDebounce(searchNotices, 300)
     
     async function getAllDatas() {
         const [data, error] = await get()
@@ -83,11 +84,13 @@ export function Home() {
 
             <main>
                 <div className="main-box">
-                    {dataFromDb.map((value) => {
+                    {dataFromDb.length > 0 && dataFromDb.map((value) => {
                         return (
                             <Cards info={value}/>
                         )
                     })}
+
+                    {dataFromDb.length <= 0 && (<img className="not-found" src={notFound} alt="Nenhum resultado encontrado" title="Nenhum resultado encontrado"/>)}
                 </div>
             </main>         
         </div>

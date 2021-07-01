@@ -29,4 +29,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .not-found {
+        width: 200px;
+    }
 }

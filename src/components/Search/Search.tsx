@@ -5,18 +5,13 @@ import './style/search.scss'
 
 export function Search() {
     const [search, setSearch] = useState('')
-    const { searchValue, setSearchValue } = useContext(SearchContext)
+    const { setSearchValue } = useContext(SearchContext)
 
     useEffect(() => {
         setSearchValue(search)
     
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [search])
-
-    useEffect(() => {
-        console.log(searchValue)
-        
-    }, [searchValue])
 
     return (
         <div className="header-search">
